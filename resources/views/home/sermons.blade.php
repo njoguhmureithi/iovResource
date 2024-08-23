@@ -1,4 +1,4 @@
-@extends('layouts')
+@extends('layouts.layout')
 
 @section('content')
 
@@ -25,46 +25,13 @@ Here is the HTML code properly indented:
         <div class="row">
             <div class="col-12">
                 <ul class="nav nav-tabs" id="showRoutineTab" role="tablist">
+                    @foreach ($categories as $category )
                     <li class="nav-item">
-                        <a class="nav-link active" id="tab-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">
-                            Monday
+                        <a class="nav-link @if($loop->iteration == 1) active @endif" id="tab-{{ $category->id }}" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab{{ $category->id }}" aria-selected="true">
+                           {{ $category->name }}
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="tab-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">
-                            Tuesday
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="tab-3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">
-                            Wednesday
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="tab-4" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">
-                            Thursday
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="tab-5" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab5" aria-selected="false">
-                            Friday
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="tab-6" data-toggle="tab" href="#tab6" role="tab" aria-controls="tab6" aria-selected="false">
-                            Saturday
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="tab-6" data-toggle="tab" href="#tab6" role="tab" aria-controls="tab6" aria-selected="false">
-                            Sunday
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="tab-6" data-toggle="tab" href="#tab6" role="tab" aria-controls="tab6" aria-selected="false">
-                            Sunday_1
-                        </a>
-                    </li>
+                    @endforeach
                 </ul>
                 <div class="tab-content" id="showRoutineTabContent">
                     <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab-1">
