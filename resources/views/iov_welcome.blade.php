@@ -5,70 +5,23 @@
 
 <section class="welcome-area">
     <div class="welcome-slides owl-carousel">
-
-        <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/1.jpg);">
+        @foreach ($sermons as $sermon)
+        <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/{{ $loop->iteration }}.jpg);">
             <div class="welcome-content h-100">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center justify-content-center">
                         <div class="col-12 col-md-9 col-lg-6">
                             <div class="welcome-text text-center">
-                                <h2 data-animation="fadeInUpBig" data-delay="100ms">Designed For Music, Engineered to Last</h2>
-                                <h5 data-animation="fadeInUpBig" data-delay="400ms">31st Dec - Night out party....Don't miss it</h5>
-                                <a href="#" class="btn razo-btn btn-2" data-animation="fadeInUpBig" data-delay="700ms">Book Now</a>
+                                <h2 data-animation="fadeInUpBig" data-delay="100ms">{{ $sermon->title }}</h2>
+                                <h5 data-animation="fadeInUpBig" data-delay="400ms"> Uploaded on {{ \Carbon\Carbon::parse($sermon->uploaded_at)->format('M d, Y') }} Ministered By: {{ $sermon->speaker->name ?? '' }}</h5>
+                                <a href="{{ route('sermonContent', ['sermon' => $sermon]) }}" class="btn razo-btn btn-2" data-animation="fadeInUpBig" data-delay="700ms">Play Now </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/30.jpg);">
-            <div class="welcome-content h-100">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center justify-content-center">
-                        <div class="col-12 col-md-10 col-lg-6">
-                            <div class="welcome-text text-center">
-                                <h2 data-animation="fadeInUp" data-delay="100ms">Designed For Music, Engineered to Last</h2>
-                                <h5 data-animation="fadeInUp" data-delay="400ms">31st Dec - Night out party....Don't miss it</h5>
-                                <a href="#" class="btn razo-btn btn-2" data-animation="fadeInUp" data-delay="700ms">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/32.jpg);">
-            <div class="welcome-content h-100">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center justify-content-center">
-                        <div class="col-12 col-md-10 col-lg-6">
-                            <div class="welcome-text text-center">
-                                <h2 data-animation="fadeInUp" data-delay="100ms">Designed For Music, Engineered to Last</h2>
-                                <h5 data-animation="fadeInUp" data-delay="400ms">31st Dec - Night out party....Don't miss it</h5>
-                                <a href="#" class="btn razo-btn btn-2" data-animation="fadeInUp" data-delay="700ms">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/bg-img/33.jpg);">
-            <div class="welcome-content h-100">
-                <div class="container h-100">
-                    <div class="row h-100 align-items-center justify-content-center">
-                        <div class="col-12 col-md-10 col-lg-6">
-                            <div class="welcome-text text-center">
-                                <h2 data-animation="fadeInUp" data-delay="100ms">Designed For Music, Engineered to Last</h2>
-                                <h5 data-animation="fadeInUp" data-delay="400ms">31st Dec - Night out party....Don't miss it</h5>
-                                <a href="#" class="btn razo-btn btn-2" data-animation="fadeInUp" data-delay="700ms">Book Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @endforeach
 
     </div>
 </section>

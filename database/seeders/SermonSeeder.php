@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Sermon;
 use App\Models\SermonCategory;
 use App\Models\SermonSerie;
 use App\Models\Speaker;
@@ -48,8 +49,8 @@ class SermonSeeder extends Seeder
             Speaker::create($speaker);
         };
 
-
-  
+        Sermon::truncate();
+        Sermon::factory(10)->create();
 
 
         

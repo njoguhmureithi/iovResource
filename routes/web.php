@@ -28,6 +28,8 @@ Route::get('/sermons', [HomeController::class, 'sermons'])->name('sermons');
 Route::get('/events', [HomeController::class, 'events'])->name('events');
 
 Route::get('/publications', [HomeController::class, 'publications'])->name('publications');
+Route::get('/sermonContent', [HomeController::class, 'sermonContent'])->name('sermonContent');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

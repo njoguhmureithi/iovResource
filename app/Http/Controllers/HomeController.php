@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Sermon;
 use App\Models\SermonCategory;
 use Illuminate\Http\Request;
+use App\Models\Publication;
 
 class HomeController extends Controller
 {
     public function index() {
-        return view('iov_welcome');
+        $sermons = Sermon::get();
+        return view('iov_welcome', ['sermons' =>$sermons]);
     }
     public function sermons () {
         $categories = SermonCategory::get();
@@ -21,6 +24,13 @@ class HomeController extends Controller
     }
 
     public function publications(){
-        return view('home.publications');
+        $publications = Publication::get();
+        return view('home.publications', ['publications'=>$publications]);
+    }
+
+    public function sermonContent(Request $request){
+        $sermon = Sermon::findOrFail($request->input('sermon'));
+        
+        return view('home.sermonContent', ['sermon' => $sermon]);
     }
 }
