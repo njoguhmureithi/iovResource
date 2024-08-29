@@ -13,4 +13,11 @@ class HomeController extends Controller
         return view('home.sermons', ['categories'=>$categories]);
     }
     
+    public function events(){
+        return view('home.events');
+    }
+
+    public function publications(){
+        return view('home.publications');
+    }
 }

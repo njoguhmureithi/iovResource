@@ -55,7 +55,7 @@
             <div class="classy-nav-container breakpoint-off">
                 <div class="container">
                     <nav class="classy-navbar justify-content-between" id="razoNav">
-                        <a class="nav-brand" href="index-2.html"><img src="img/core-img/logo.png" alt></a>
+                        <a class="nav-brand" href="index-2.html"><img src="img/core-img/loo.png" alt>Instruments of Valour</a>
                         <div class="classy-navbar-toggler">
                             <span class="navbarToggler"><span></span><span></span><span></span></span>
                         </div>
@@ -69,64 +69,10 @@
                             <div class="classynav">
                                 <ul id="nav">
                                     <li><a href="index-2.html">Home</a></li>
-                                    <li><a href="#">Pages</a>
-                                        <ul class="dropdown">
-                                            <li><a href="index-2.html">- Home</a></li>
-                                            <li><a href="charts.html">- Charts</a></li>
-                                            <li><a href="single-charts.html">- Charts Details</a></li>
-                                            <li><a href="podcast.html">- Podcast</a></li>
-                                            <li><a href="single-podcast.html">- Podcast Details</a></li>
-                                            <li><a href="show.html">- Show</a></li>
-                                            <li><a href="events.html">- Event</a></li>
-                                            <li><a href="blog.html">- Blog</a></li>
-                                            <li><a href="single-blog.html">- Blog Details</a></li>
-                                            <li><a href="#">- Dropdown</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                    <li><a href="#">- Dropdown Item</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="show.html">Shows</a></li>
-                                    <li><a href="charts.html">Charts</a></li>
-                                    <li><a href="podcast.html">Podcasts</a></li>
-                                    <li><a href="#">Mega</a>
-                                        <div class="megamenu">
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="index-2.html">- Home</a></li>
-                                                <li><a href="charts.html">- Charts</a></li>
-                                                <li><a href="single-charts.html">- Charts Details</a></li>
-                                                <li><a href="podcast.html">- Podcast</a></li>
-                                                <li><a href="single-podcast.html">- Podcast Details</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="show.html">- Show</a></li>
-                                                <li><a href="events.html">- Event</a></li>
-                                                <li><a href="blog.html">- Blog</a></li>
-                                                <li><a href="single-blog.html">- Blog Details</a></li>
-                                                <li><a href="index-2.html">- Home</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="charts.html">- Charts</a></li>
-                                                <li><a href="single-charts.html">- Charts Details</a></li>
-                                                <li><a href="podcast.html">- Podcast</a></li>
-                                                <li><a href="single-podcast.html">- Podcast Details</a></li>
-                                                <li><a href="show.html">- Show</a></li>
-                                            </ul>
-                                            <ul class="single-mega cn-col-4">
-                                                <li><a href="show.html">- Show</a></li>
-                                                <li><a href="events.html">- Event</a></li>
-                                                <li><a href="blog.html">- Blog</a></li>
-                                                <li><a href="single-blog.html">- Blog Details</a></li>
-                                                <li><a href="index-2.html">- Home</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
+                                    <li><a href="show.html">Sermons</a></li>
                                     <li><a href="events.html">Events</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="events.html">NDC</a></li>
+                                    <li><a href="blog.html">Publications</a></li>
                                 </ul>
                                 <div class="social-share-icon">
                                     <i class="social_share"></i>

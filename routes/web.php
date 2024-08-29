@@ -21,6 +21,10 @@ Route::get('/', function () {
 
 Route::get('/sermons', [HomeController::class, 'sermons'])->name('sermons');
 
+Route::get('/events', [HomeController::class, 'events'])->name('events');
+
+Route::get('/publications', [HomeController::class, 'publications'])->name('publications');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

@@ -3,9 +3,7 @@
 @section('content')
 
 
-Here is the HTML code properly indented:
 
-```html
 <section class="show-welcome-area bg-overlay bg-img jarallax" style="background-image: url(img/bg-img/54.jpg);">
     <div class="container h-100">
         <div class="row h-100 align-items-center">
