@@ -21,8 +21,9 @@ class SermonFactory extends Factory
             'speaker_id' =>fake()->name(),
             'sermon_category_id' =>fake()->name(),
             'sermon_series_id'=>fake()->name(),
-            'cover_image' =>fake(,
-            'speaker_id' =>fake()->name(),
+            'cover_image' =>fake(),
+            'uploaded_by' =>fake(),
+            'uploaded_at' =>fake()->now(),
         ];
     }
 }
