@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
+    public function index() {
+        return view('iov_welcome');
+    }
     public function sermons () {
         $categories = SermonCategory::get();
         // dd($categories);

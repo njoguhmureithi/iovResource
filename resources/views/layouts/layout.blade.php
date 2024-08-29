@@ -68,11 +68,11 @@
                             </div>
                             <div class="classynav">
                                 <ul id="nav">
-                                    <li><a href="index-2.html">Home</a></li>
-                                    <li><a href="show.html">Sermons</a></li>
-                                    <li><a href="events.html">Events</a></li>
+                                    <li><a href= "{{ route('home') }}">Home</a></li>
+                                    <li><a href="{{ route('sermons') }}">Sermons</a></li>
+                                    <li><a href="{{ route('events') }}">Events</a></li>
                                     <li><a href="events.html">NDC</a></li>
-                                    <li><a href="blog.html">Publications</a></li>
+                                    <li><a href="{{ route('publications') }}">Publications</a></li>
                                 </ul>
                                 <div class="social-share-icon">
                                     <i class="social_share"></i>
