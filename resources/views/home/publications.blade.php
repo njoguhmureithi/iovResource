@@ -21,7 +21,7 @@
           <div class="col-12 col-md-6 col-xl-3">
               <div class="single-podcast-area mb-30 wow fadeInUp" data-wow-delay="100ms">
                   <div class="podcast-thumb">
-                      <img src="img/bg-img/.rand(1,77).jpg" alt>  
+                      <img src="img/bg-img/{{ rand(1,77) }}.jpg" alt>  
                       <div class="like-comment">
                           <a href="#" class="like">2 <i class="icon_heart"></i></a>
                           <a href="#" class="like">2 <i class="icon_chat"></i></a>
@@ -35,7 +35,7 @@
                       <h5>{{ $publication->title }}</h5>
                       <div class="border-line"></div>
                       <div class="play-download-btn d-flex align-items-center justify-content-between">
-                          <a href="#" class="btn razo-btn btn-sm">read now</a>
+                          <a href="{{ route('sermonContent', ['publication' => $publication]) }}" class="btn razo-btn btn-sm">read now</a>
                           <a href="audio/dummy-audio.html" class="music-download-btn" download>
                               <i class="icon_download"></i>
                           </a>

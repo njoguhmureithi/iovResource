@@ -66,6 +66,7 @@
                         <h6>John Milley</h6>
                     </div>
                 </div>
+                
                 <div class="col-12 col-sm-10 col-xl-9">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
                     <p>Cras semper mi eu sapien rhoncus, gravida suscipit nibh fermentum. Fusce iaculis, nunc ut euismod consectetur, erat mauris tempor felis, id feugiat nunc dolor et dui. Donec consequat luctus odio, et euismod felis suscipit scelerisque. Suspendisse luctus vulputate lectus, sed convallis eros fringilla at. Suspendisse a fringilla nibh. Donec ut mi nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam vestibulum, velit ut interdum viverra, tortor sapien porttitor ipsum, non eleifend nunc metus luctus dui.</p>

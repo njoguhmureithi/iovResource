@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from preview.colorlib.com/theme/razo/events.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Aug 2024 06:05:08 GMT -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content>
@@ -55,7 +55,7 @@
             <div class="classy-nav-container breakpoint-off">
                 <div class="container">
                     <nav class="classy-navbar justify-content-between" id="razoNav">
-                        <a class="nav-brand" href="index-2.html"><img src="img/core-img/loo.png" alt>Instruments of Valour</a>
+                        <a class="nav-brand" href="index-2.html"><img src="img/core-img/lo2.png" alt>Instruments of Valour</a>
                         <div class="classy-navbar-toggler">
                             <span class="navbarToggler"><span></span><span></span><span></span></span>
                         </div>
@@ -96,105 +96,61 @@
         <div class="main-footer-area section-padding-80-0">
             <div class="container">
                 <div class="row justify-content-between">
-                    <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+     <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                         <div class="single-footer-widget mb-80">
                             <a href="#" class="footer-logo"><img src="img/core-img/logo2.png" alt></a>
-                            <p class="mb-30">Lorem ipsum dolor sit amet, consectet adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <div class="footer-content">
-                                <div class="single-contact-info d-flex">
-                                    <div class="icon">
-                                        <i class="icon_pin"></i>
-                                    </div>
-                                    <div class="text">
-                                        <p>24 No. Amazing Valley, Aewsome St. New York, USA</p>
-                                    </div>
-                                </div>
-                                <div class="single-contact-info d-flex">
-                                    <div class="icon">
-                                        <i class="icon_phone"></i>
-                                    </div>
-                                    <div class="text">
-                                        <p>+11 123 4567890</p>
-                                    </div>
-                                </div>
-                                <div class="single-contact-info d-flex">
-                                    <div class="icon">
-                                        <i class="icon_mail_alt"></i>
-                                    </div>
-                                    <div class="text">
-                                        <p><a href="https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c5acaba3aaeba6aaa9aab7a9aca785a2a8a4aca9eba6aaa8">[email&#160;protected]</a></p>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
-                    </div>
+                    </div>               
                     <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                         <div class="single-footer-widget mb-80">
-                            <h4 class="widget-title">Twitter Feed</h4>
+                            <h4 class="widget-title">Reach Us On</h4>
                             <div class="single-twitter-feed d-flex">
                                 <div class="tweet-icon">
-                                    <i class="fa fa-twitter"></i>
+                                    <i class="icon_phone"></i>
                                 </div>
-                                <div class="tweet">
-                                    <p><a href="#">Kerem Suer</a> @kerem American conducts it first ever done strike Qaeda</p>
+                                <div class="text">
+                                    <p>+11 123 4567890</p>
                                 </div>
                             </div>
                             <div class="single-twitter-feed d-flex">
                                 <div class="tweet-icon">
-                                    <i class="fa fa-twitter"></i>
+                                    <i class="icon_mail_alt"></i>
                                 </div>
-                                <div class="tweet">
-                                    <p><a href="#">Axel Hervelle</a> @axel_hervelle Tens of thousands attend rallies held in D.C.</p>
+                                <div class="text">
+                                    <p><a href="#" class="__cf_email__"</a>info@instrumentsofvalour.org</p>
                                 </div>
                             </div>
                             <div class="single-twitter-feed d-flex">
                                 <div class="tweet-icon">
-                                    <i class="fa fa-twitter"></i>
+                                    <i class="icon_pin"></i>
                                 </div>
-                                <div class="tweet">
-                                    <p><a href="#">Chris Pratt</a> @chris_pratt Hundreds of protesters shut down meeting.</p>
+                                <div class="text">
+                                    <p>Nairobi, Kenya</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-4 col-xl-3">
                         <div class="single-footer-widget mb-80">
-                            <h4 class="widget-title">Instagram</h4>
-                            <div class="razo-instagram-area d-flex flex-wrap">
-                                <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/2.jpg" alt></a>
-                                </div>
-                                <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/3.jpg" alt></a>
-                                </div>
-                                <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/4.jpg" alt></a>
-                                </div>
-                                <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/5.jpg" alt></a>
-                                </div>
-                                <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/6.jpg" alt></a>
-                                </div>
-                                <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/7.jpg" alt></a>
-                                </div>
-                                <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/8.jpg" alt></a>
-                                </div>
-                                <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/9.jpg" alt></a>
-                                </div>
-                                <div class="single-instagram-feed">
-                                    <a href="#"><img src="img/bg-img/10.jpg" alt></a>
-                                </div>
+                            <h4 class="widget-title">Location</h4>
+                            <div class="map-area">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.964777957766!2d36.762031410946435!3d-1.1851719355198091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f232f411519c5%3A0x78b4da3fecf97a3d!2sFOUNTAIN%20GATE%20CHURCH%20BANANA!5e0!3m2!1sen!2ske!4v1725199391342!5m2!1sen!2ske" 
+                                width="300" 
+                                height="200" 
+                                style="border:2pt;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
                             </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
-
+o
         <div class="copywrite-area">
             <div class="container">
                 <div class="row">
@@ -202,7 +158,7 @@
                         <div class="copywrite-text">
                             <p>
                                 Copyright &copy;<script data-cfasync="false" src="https://preview.colorlib.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com/" target="_blank">Colorlib</a>
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved <a href="https://newdawnchapel.org/" target="_blank">NDC Tech Team</a>
                             </p>
                         </div>
                     </div>

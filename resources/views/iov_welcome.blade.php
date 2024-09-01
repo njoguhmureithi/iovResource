@@ -35,84 +35,46 @@
                 <div class="weekly-news-area mb-50">
 
                     <div class="section-heading">
-                        <h2>Blog New</h2>
+                        <h2> Sermon Notes</h2>
                     </div>
-
+                   
                     <div class="featured-post-area bg-img bg-overlay mb-30" style="background-image: url(img/bg-img/11.jpg);">
                         <div class="post-overlay">
                             <div class="post-meta">
                                 <a href="#"><i class="fa fa-comments-o" aria-hidden="false"></i> 2.1k</a>
                                 <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 3.6k</a>
                             </div>
-                            <a href="single-blog.html" class="post-title">The light and music exposition hits los angeles in the fashion week</a>
+                            <a href="single-blog.html" class="post-title">{{ $featured_note->sermon->title ?? 'No Title' }}</a>
                         </div>
                     </div>
-
-                    <div class="row">
-
-                        <div class="col-12 col-md-6">
-                            <div class="razo-single-post d-flex mb-30">
-                                <div class="post-thumbnail">
-                                    <a href="single-blog.html"><img src="img/bg-img/13.jpg" alt></a>
+                    
+                    
+                
+                <div class="row">
+                @foreach ($sermonNotes as $note)
+                    <div class="col-12 col-md-6">
+                        <div class="razo-single-post d-flex mb-30">
+                            <div class="post-thumbnail">
+                                <a href="single-blog.html"><img src="{{ $note->sermon->cover_image }}" alt></a>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 2.1k</a>
+                                    <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 3.6k</a>
                                 </div>
-                                <div class="post-content">
-                                    <div class="post-meta">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 2.1k</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 3.6k</a>
-                                    </div>
-                                    <a href="single-blog.html" class="post-title">Drug bust leads police to underground tunnel</a>
-                                </div>
+                                <a href="single-blog.html" class="post-title">{{ $note->sermon->title ?? 'No Title' }}</a>
                             </div>
                         </div>
-
-                        <div class="col-12 col-md-6">
-                            <div class="razo-single-post d-flex mb-30">
-                                <div class="post-thumbnail">
-                                    <a href="single-blog.html"><img src="img/bg-img/14.jpg" alt></a>
-                                </div>
-                                <div class="post-content">
-                                    <div class="post-meta">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 2.1k</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 3.6k</a>
-                                    </div>
-                                    <a href="single-blog.html" class="post-title">Hear abuse victims' messages for the Pope</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6">
-                            <div class="razo-single-post d-flex mb-30">
-                                <div class="post-thumbnail">
-                                    <a href="single-blog.html"><img src="img/bg-img/15.jpg" alt></a>
-                                </div>
-                                <div class="post-content">
-                                    <div class="post-meta">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 2.1k</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 3.6k</a>
-                                    </div>
-                                    <a href="single-blog.html" class="post-title">New Mexico uspects' attorneys file to have all</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6">
-                            <div class="razo-single-post d-flex mb-30">
-                                <div class="post-thumbnail">
-                                    <a href="single-blog.html"><img src="img/bg-img/16.jpg" alt></a>
-                                </div>
-                                <div class="post-content">
-                                    <div class="post-meta">
-                                        <a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> 2.1k</a>
-                                        <a href="#"><i class="fa fa-eye" aria-hidden="true"></i> 3.6k</a>
-                                    </div>
-                                    <a href="single-blog.html" class="post-title">Trump tweets false white supremacist talking</a>
-                                </div>
-                            </div>
-                        </div>
-
+                    </div>
+                @endforeach
+                    </div>
+                    <div class="view-more-button text-center">
+                        <a href="#" class="btn razo-btn mt-50">View More</a>
                     </div>
                 </div>
             </div>
+
+            
 
             <div class="col-12 col-md-4">
                 <div class="trending-news-area mb-50">
@@ -197,7 +159,7 @@
 
             <div class="col-sm-6">
                 <div class="section-heading white">
-                    <h2>Music Chart</h2>
+                    <h2>Audio Sermons</h2>
                 </div>
             </div>
 
@@ -341,7 +303,7 @@
 
             <div class="col-12">
                 <div class="featured-trending-video mb-30 wow fadeInUp" data-wow-delay="100ms">
-                    <iframe src="https://www.youtube.com/embed/zRvhQ5Rf6-U" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/pS__ttyHIJw?si=oFQfZyVxRfhegYJI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
 

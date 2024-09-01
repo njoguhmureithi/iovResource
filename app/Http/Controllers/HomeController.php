@@ -6,12 +6,15 @@ use App\Models\Sermon;
 use App\Models\SermonCategory;
 use Illuminate\Http\Request;
 use App\Models\Publication;
+use App\Models\SermonNote;
 
 class HomeController extends Controller
 {
     public function index() {
         $sermons = Sermon::get();
-        return view('iov_welcome', ['sermons' =>$sermons]);
+        $featured_note = SermonNote::first();
+        $sermonNotes = SermonNote::where('id', '<>', $featured_note->id)->get();
+        return view('iov_welcome', ['sermons' =>$sermons, 'featured_note' => $featured_note, 'sermonNotes' => $sermonNotes]);
     }
     public function sermons () {
         $categories = SermonCategory::get();
