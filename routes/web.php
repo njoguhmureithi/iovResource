@@ -49,9 +49,7 @@ Route::middleware('auth')->group(function () {
      * E.g /sermons is declared above, the one below will be /admin/sermons
      */
     Route::prefix('admin')->name('admin.')->group(function(){
-        Route::get('dashboard', function(){
-            return view('admin.admin-dashboard');
-        })->name('admin-dashboard');
+        Route::get('dashboard', [HomeController::class, 'dashboard'])->name('dashboard');
         Route::resource('events', EventsController::class);
         Route::resource('publications', PublicationsController::class);
         Route::resource('sermons-category', controller:SermonCategoryController::class);

@@ -38,4 +38,8 @@ class HomeController extends Controller
         
         return view('home.sermonContent', ['sermon' => $sermon]);
     }
+
+    public function dashboard(){
+        return view('admin.admin-dashboard');
+    }
 }
