@@ -2,7 +2,7 @@
     <nav class="iq-sidebar-menu">
        <ul id="iq-sidebar-toggle" class="iq-menu">
         <li>
-            <a href="calendar.html" class="iq-waves-effect"><i class="las la-calendar iq-arrow-left"></i><span>Dashboard</span></a>
+            <a href="{{ route('admin-dashboard') }}" class="iq-waves-effect"><i class="las la-calendar iq-arrow-left"></i><span>Dashboard</span></a>
          </li>
           <li class="active">
              <a href="#admin" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true"><span class="ripple rippleEffect"></span><i class="ri-admin-line iq-arrow-left"></i><span>Sermons</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>

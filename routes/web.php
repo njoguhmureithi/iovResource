@@ -39,9 +39,6 @@ Route::get('/sermonContent', [HomeController::class, 'sermonContent'])->name('se
 
 
 
-Route::get('/admin-dashboard', function(){
-    return view('admin.admin-dashboard');
-});
 
 
 Route::get('/dashboard', function () {
@@ -49,6 +46,11 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
+
+
+    Route::get('/admin-dashboard', function(){
+        return view('admin.admin-dashboard');
+    })->name('admin-dashboard');
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
