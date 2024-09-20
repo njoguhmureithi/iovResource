@@ -190,7 +190,7 @@
                         </div>
                     </div>
                     <div class="music-price">
-                        <a href="#" class="btn razo-btn btn-2">$12.99</a>
+                        <a href="#" class="btn razo-btn btn-2">Download</a>
                     </div>
                 </div>
 
@@ -212,7 +212,7 @@
                         </div>
                     </div>
                     <div class="music-price">
-                        <a href="#" class="btn razo-btn btn-2">$10.99</a>
+                        <a href="#" class="btn razo-btn btn-2">Download</a>
                     </div>
                 </div>
 
@@ -234,7 +234,7 @@
                         </div>
                     </div>
                     <div class="music-price">
-                        <a href="#" class="btn razo-btn btn-2">$10.99</a>
+                        <a href="#" class="btn razo-btn btn-2">Download</a>
                     </div>
                 </div>
 
@@ -256,7 +256,7 @@
                         </div>
                     </div>
                     <div class="music-price">
-                        <a href="#" class="btn razo-btn btn-2">$10.99</a>
+                        <a href="#" class="btn razo-btn btn-2">Download</a>
                     </div>
                 </div>
 
@@ -278,7 +278,7 @@
                         </div>
                     </div>
                     <div class="music-price">
-                        <a href="#" class="btn razo-btn btn-2">$10.99</a>
+                        <a href="#" class="btn razo-btn btn-2">Download</a>
                     </div>
                 </div>
 
@@ -307,7 +307,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4">
+            {{-- <div class="col-12 col-md-6 col-lg-4">
                 <div class="razo-single-post d-flex mb-30 wow fadeInUp" data-wow-delay="100ms">
                     <div class="post-thumbnail">
                         <a href="single-blog.html"><img src="img/bg-img/2.jpg" alt></a>
@@ -395,7 +395,7 @@
                         <a href="single-blog.html" class="post-title">Trump: Impeach somebody who's done great job?</a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
         </div>
     </div>
@@ -407,15 +407,15 @@
 
             <div class="col-12 col-md-6">
                 <div class="app-thumbnail mb-80">
-                    <img src="img/bg-img/mockup-iphone.png" alt>
+                    <img src="img/bg-img/iov-app.png" alt>
                 </div>
             </div>
 
             <div class="col-12 col-md-6">
                 <div class="app-download-text mb-80">
-                    <span>Download app and Enjoy radio &amp; music</span>
-                    <h2>Radio Music</h2>
-                    <p>Radio app plus is a app that lets you download videos and music from social network, Youtube, etc. You may also download and play the latest HD series and movies, and also watch free live television. This app is also available for Android and Ios.</p>
+                    <span>Download app and Enjoy unadulterated word of &amp; GOD</span>
+                    <h2>IoV App</h2>
+                    <p>IoV app is a resource that lets you stream and download sermon videos and music. You may also download and play the latest HD sermon series and publications. This app will be available for Android and Ios.</p>
                     <div class="app-download-btn">
                         <a href="#"><img src="img/core-img/google-play.png" alt></a>
                         <a href="#"><img src="img/core-img/app-store.png" alt></a>
@@ -464,64 +464,52 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <tr scope="row">
+                                <td scope="row">
+                                    <p>Morning Prayers - Virtual</p>
+                                    <span>05:00 am - 05:45 pm</span>
+                                </td>
+                                <td>
+                                    <p>Morning Prayers - Virtual</p>
+                                    <span>05:00 am - 05:45 pm</span>
+                                </td>
+                                <td>
+                                    <p>Morning Prayers - Virtual</p>
+                                    <span>05:00 am - 05:45 pm</span>
+                                </td>
+                                <td>
+                                    <p>Morning Prayers - Virtual</p>
+                                    <span>05:00 am - 05:45 pm</span>
+                                </td>
+                                <td>
+                                    <p>Morning Prayers - Virtual</p>
+                                    <span>05:00 am - 05:45 pm</span>
+                                </td>
+                                <td>
+                                    <p>IoV Phsical Meeting - To be Confirmed</p>
+                                    <span>09:00 am - 03:00 pm</span>
+                                </td>
+                                <td></td>
+                            </tr>
                             <tr>
                                 <th scope="row">
-                                    <p>As BBC Radio 5 live</p>
-                                    <span>01:00 am - 02:30 am</span>
-                                </th>
-                                <td>
-                                    <h5>Andrew Peach Birthday Surprise!</h5>
-                                    <span>13:00 pm - 16:00 pm</span>
-                                </td>
-                                <td>
-                                    <h5>As BBC Radio 5 live</h5>
-                                    <span>23:00 pm - 02:00 am</span>
-                                </td>
-                                <td>
-                                    <h5>Berkshire Sport: Extra Time</h5>
-                                    <span>01:00 am - 03:30 am</span>
-                                </td>
-                                <td>
-                                    <h5>As BBC Radio 5 live</h5>
-                                    <span>01:00 am - 02:30 am</span>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">
-                                    <p>Berkshire Sport: Extra Time</p>
-                                    <span>05:30 am - 06:30 am</span>
                                 </th>
                                 <td></td>
-                                <td></td>
                                 <td>
-                                    <h5>Tony Blackburn on BBC Radio</h5>
-                                    <span>03:00 am - 05:00 am</span>
+                                    <p>School of Grace</p>
+                                    <span>05:00 pm - 06:30 pm</span>
                                 </td>
                                 <td></td>
                                 <td>
-                                    <h5>Stereo Underground</h5>
-                                    <span>03:00 am - 05:00 am</span>
+                                    <p>Night Vigil - Monthly</p>
+                                    <span>09:00 pm - 05:00 am</span>
+                                </td>
+                                <td>
+                                    
                                 </td>
                             </tr>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>
-                                    <h5>BBC Music Introducing in</h5>
-                                    <span>10:00 am - 12:00 pm</span>
-                                </td>
-                                <td>
-                                    <h5>Stereo Underground</h5>
-                                    <span>13:00 pm - 15:00 pm</span>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <h5>Sport on BBC Radio Berkshire</h5>
-                                    <span>07:00 am - 09:30 am</span>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
+                           
+                            {{-- <tr>
                                 <th scope="row">
                                     <p>Andrew Peach Birthday Surprise!</p>
                                     <span>13:00 pm - 16:00 pm</span>
@@ -540,7 +528,7 @@
                                     <h5>Danyl Johnson and Natasha Watts</h5>
                                     <span>13:00 pm - 16:00 pm</span>
                                 </td>
-                            </tr>
+                            </tr> --}}
                         </tbody>
                     </table>
 
@@ -557,13 +545,13 @@
 
             <div class="col-sm-6">
                 <div class="section-heading white">
-                    <h2>Latest News</h2>
+                    <h2>Upcoming Events</h2>
                 </div>
             </div>
 
             <div class="col-sm-6">
                 <div class="show-all-button mb-50 text-right">
-                    <a href="#" class="btn show-all-btn">Show All Blog</a>
+                    <a href="#" class="btn show-all-btn">Show All Events</a>
                 </div>
             </div>
         </div>

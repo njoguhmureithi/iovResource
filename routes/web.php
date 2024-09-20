@@ -31,6 +31,12 @@ Route::get('/publications', [HomeController::class, 'publications'])->name('publ
 Route::get('/sermonContent', [HomeController::class, 'sermonContent'])->name('sermonContent');
 
 
+
+Route::get('/admin-dashboard', function(){
+    return view('admin.admin-dashboard');
+});
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
