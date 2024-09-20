@@ -332,12 +332,10 @@
           </div>
        </div>
     </div>
- </footer>
- <!-- Footer END -->
- @yield('content')
- <!-- color-customizer -->
- 
- <!-- color-customizer END -->
+   </footer>
+   <!-- Footer END -->
+   @yield('content')
+   </div>
  <!-- Optional JavaScript -->
  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
  <script src="{{ asset('admin-js/jquery.min.js') }}"></script>

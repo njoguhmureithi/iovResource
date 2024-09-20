@@ -471,7 +471,5 @@
             </div>
          </div>
       </div>
-   </div>
-   <!-- Wrapper END -->
    
    @endsection

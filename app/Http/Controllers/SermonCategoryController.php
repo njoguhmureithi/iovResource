@@ -7,6 +7,14 @@ use Illuminate\Http\Request;
 
 class SermonCategoryController extends Controller
 {
+    
+    /**
+     * $this->active variable is defined in App\Http\Controllers\Controller.php
+     * as a protected variable. It is used to determine which menu item should 
+     * be show as active in the layouts.admin-nav.blade.php view
+     */
+    protected $active = 'sermon-categories';
+
     /**
      * Display a listing of the resource.
      *
@@ -14,12 +22,6 @@ class SermonCategoryController extends Controller
      */
     public function index()
     {
-        /**
-         * $this->active variable is defined in App\Http\Controllers\Controller.php
-         * as a protected variable. It is used to determine which menu item should 
-         * be show as active in the layouts.admin-nav.blade.php view
-         */
-        $this->active = 'sermon-categories';
         
         return view('admin.admin-category', [
                 	'categories' => SermonCategory::get(),
@@ -34,7 +36,7 @@ class SermonCategoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.admin-add-category');
     }
 
     /**
@@ -45,7 +47,15 @@ class SermonCategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required|unique:sermon_categories',
+        ]);
+
+        SermonCategory::create([
+            'name' => $request->input('name'),
+        ]);
+
+        return redirect()->route('admin.sermons-category.index');
     }
 
     /**
