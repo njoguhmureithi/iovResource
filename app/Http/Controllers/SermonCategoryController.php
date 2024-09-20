@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\SermonCategory;
 use Illuminate\Http\Request;
 
 class SermonCategoryController extends Controller
@@ -13,7 +14,17 @@ class SermonCategoryController extends Controller
      */
     public function index()
     {
-        return view('admin.admin-category');
+        /**
+         * $this->active variable is defined in App\Http\Controllers\Controller.php
+         * as a protected variable. It is used to determine which menu item should 
+         * be show as active in the layouts.admin-nav.blade.php view
+         */
+        $this->active = 'sermon-categories';
+        
+        return view('admin.admin-category', [
+                	'categories' => SermonCategory::get(),
+                    'active' => $this->active
+                ]);
     }
 
     /**

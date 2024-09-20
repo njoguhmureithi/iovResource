@@ -40,6 +40,7 @@ class HomeController extends Controller
     }
 
     public function dashboard(){
-        return view('admin.admin-dashboard');
+        $this->active = '';
+        return view('admin.admin-dashboard', ['active' => $this->active]);
     }
 }
