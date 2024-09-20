@@ -1,7 +1,14 @@
 <?php
 
+use App\Http\Controllers\EventsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\PublicationsController;
+use App\Http\Controllers\SermonCategoryController;
+use App\Http\Controllers\SermonNotesController;
+use App\Http\Controllers\SermonsController;
+use App\Http\Controllers\UsersController;
+use Database\Factories\UserFactory;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -46,6 +53,13 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+    Route::resource('publications', PublicationsController::class);
+    Route::resource('events', EventsController::class);
+    Route::resource('sermons-category', controller:SermonCategoryController::class);
+    Route::resource(name:'sermon-notes', controller:SermonNotesController::class);
+    Route::resource(name:'users', controller:UsersController::class);
+    Route::resource(name: 'sermons', controller:SermonsController::class);
 });
 
 require __DIR__.'/auth.php';
