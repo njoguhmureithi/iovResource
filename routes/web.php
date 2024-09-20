@@ -37,31 +37,32 @@ Route::get('/events', [HomeController::class, 'events'])->name('events');
 Route::get('/publications', [HomeController::class, 'publications'])->name('publications');
 Route::get('/sermonContent', [HomeController::class, 'sermonContent'])->name('sermonContent');
 
-
-
-
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
 
-
-    Route::get('/admin-dashboard', function(){
-        return view('admin.admin-dashboard');
-    })->name('admin-dashboard');
+    /**
+     * Grouped admin routes
+     * Added the prefix so that the admin routes do not conflict with the routes above.
+     * E.g /sermons is declared above, the one below will be /admin/sermons
+     */
+    Route::prefix('admin')->name('admin.')->group(function(){
+        Route::get('dashboard', function(){
+            return view('admin.admin-dashboard');
+        })->name('admin-dashboard');
+        Route::resource('events', EventsController::class);
+        Route::resource('publications', PublicationsController::class);
+        Route::resource('sermons-category', controller:SermonCategoryController::class);
+        Route::resource(name:'sermon-notes', controller:SermonNotesController::class);
+        Route::resource(name: 'sermons', controller:SermonsController::class);
+        Route::resource(name:'users', controller:UsersController::class);
+    });
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-
-    Route::resource('publications', PublicationsController::class);
-    Route::resource('events', EventsController::class);
-    Route::resource('sermons-category', controller:SermonCategoryController::class);
-    Route::resource(name:'sermon-notes', controller:SermonNotesController::class);
-    Route::resource(name:'users', controller:UsersController::class);
-    Route::resource(name: 'sermons', controller:SermonsController::class);
 });
 
 require __DIR__.'/auth.php';
