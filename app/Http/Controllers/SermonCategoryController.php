@@ -36,7 +36,9 @@ class SermonCategoryController extends Controller
      */
     public function create()
     {
-        return view('admin.admin-add-category');
+        return view('admin.admin-add-category', [
+                    'active' => $this->active
+                ]);
     }
 
     /**
@@ -77,7 +79,12 @@ class SermonCategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $sermonCategory = SermonCategory::findOrFail($id);
+        
+        return view('admin.admin-add-category', [
+            'active' => $this->active,
+            'sermonCategory' => $sermonCategory
+        ]);
     }
 
     /**
@@ -89,7 +96,15 @@ class SermonCategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'name' =>'required|unique:sermon_categories',
+        ]);
+        
+        $sermonCategory = SermonCategory::findOrFail($id);
+        $sermonCategory->name = $request->input('name');
+        $sermonCategory->save();
+
+        return redirect()->route('admin.sermons-category.index');
     }
 
     /**
@@ -100,6 +115,24 @@ class SermonCategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $sermonCategory = SermonCategory::findOrFail($id);
+        
+        try {
+            // Delete all notes in each sermon in the category
+            $cat_sermons = $sermonCategory->sermons;
+            foreach ($cat_sermons as $sermon) {
+                $sermon->sermonNotes()->delete();
+
+                // Delete the sermon in loop
+                $sermon->delete();
+            }        
+
+            // Delete the category
+            $sermonCategory->delete();
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+        
+        return redirect()->route('admin.sermons-category.index');
     }
 }

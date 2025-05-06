@@ -38,8 +38,31 @@
                                     </td>
                                      <td>
                                         <div class="flex align-items-center list-user-action">
-                                          <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit" href="{{ route('admin.sermons-category.edit', ['sermons_category' => $category]) }}"><i class="ri-pencil-line"></i></a>
-                                          <a class="bg-primary" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete" href="{{ route('admin.sermons-category.destroy', ['sermons_category' => $category]) }}"><i class="ri-delete-bin-line"></i></a>
+                                          <a 
+                                             class="bg-primary"
+                                             data-toggle="tooltip"
+                                             data-placement="top"
+                                             title="Edit {{ $category->name }}"
+                                             data-original-title="Edit {{ $category->name }}"
+                                             href="{{ route('admin.sermons-category.edit', ['sermons_category' => $category]) }}"
+                                          >
+                                             <i class="ri-pencil-line"></i>
+                                          </a>
+                                          <form style="display: inline-block;" action="{{ route('admin.sermons-category.destroy', ['sermons_category' => $category]) }}" method="POST">
+                                             @csrf()
+                                             @method('DELETE')
+                                             <a
+                                                class="bg-primary"
+                                                data-toggle="tooltip"
+                                                data-placement="top"
+                                                title="Delete {{ $category->name }}"
+                                                data-original-title="Delete {{ $category->name }}"
+                                                href="route('logout')"
+                                                onclick="event.preventDefault();
+                                                         this.closest('form').submit();">
+                                                <i class="ri-delete-bin-line"></i>
+                                             </a>
+                                         </form>
                                        </div>
                                      </td>
                                  </tr>
