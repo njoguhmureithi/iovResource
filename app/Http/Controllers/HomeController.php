@@ -13,7 +13,9 @@ class HomeController extends Controller
     public function index() {
         $sermons = Sermon::get();
         $featured_note = SermonNote::first();
-        $sermonNotes = SermonNote::where('id', '<>', $featured_note->id)->get();
+        $sermonNotes = SermonNote::when($featured_note, function($query) use ($featured_note) {
+                            return $query->where('id', '<>', $featured_note->id);
+                        })->get();
         return view('iov_welcome', ['sermons' =>$sermons, 'featured_note' => $featured_note, 'sermonNotes' => $sermonNotes]);
     }
     public function sermons () {
@@ -41,5 +43,10 @@ class HomeController extends Controller
     }
     public function home_test(){
         return view('home.home_test');
+    }
+
+    public function dashboard(){
+        $this->active = '';
+        return view('admin.admin-dashboard', ['active' => $this->active]);
     }
 }
