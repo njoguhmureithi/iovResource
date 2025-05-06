@@ -36,4 +36,7 @@ class HomeController extends Controller
         
         return view('home.sermonContent', ['sermon' => $sermon]);
     }
+    public function blogs(){
+        return view('home.blogs');
+    }
 }
