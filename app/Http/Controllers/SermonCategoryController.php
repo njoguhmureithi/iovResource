@@ -88,7 +88,7 @@ class SermonCategoryController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified Sermon Category in DB.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -108,7 +108,7 @@ class SermonCategoryController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified Sermon Category from DB (soft delete)
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
