@@ -73,6 +73,7 @@
                                     <li><a href="{{ route('events') }}">Events</a></li>
                                     <li><a href="events.html">NDC</a></li>
                                     <li><a href="{{ route('publications') }}">Publications</a></li>
+                                    <li><a href="{{ route('blogs') }}">Blogs</a></li>
                                 </ul>
                                 <div class="social-share-icon">
                                     <i class="social_share"></i>

@@ -4,7 +4,7 @@
 
 
 
-<section class="show-welcome-area bg-overlay bg-img jarallax" style="background-image: url(img/bg-img/54.jpg);">
+<!-- <section class="show-welcome-area bg-overlay bg-img jarallax" style="background-image: url(img/bg-img/54.jpg);">
     <div class="container h-100">
         <div class="row h-100 align-items-center">
             <div class="col-12">
@@ -16,7 +16,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <section class="show-routine-area section-padding-80-0 mb-50">
     <div class="container">

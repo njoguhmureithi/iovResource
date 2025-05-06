@@ -29,6 +29,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/home_test', [HomeController::class,'home_test'])->name('home_test');
 
 Route::get('/sermons', [HomeController::class, 'sermons'])->name('sermons');
 
@@ -36,6 +37,7 @@ Route::get('/events', [HomeController::class, 'events'])->name('events');
 
 Route::get('/publications', [HomeController::class, 'publications'])->name('publications');
 Route::get('/sermonContent', [HomeController::class, 'sermonContent'])->name('sermonContent');
+Route::get('/blogs', [HomeController::class, 'blogs'])->name('blogs');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
